@@ -62,7 +62,7 @@ async fn subscribe_returns_a_200_valid_form_data() {
 }
 
 #[tokio::test]
-async fn subscibe_returns_a_400_when_data_is_missing() {
+async fn subscribe_returns_a_400_when_data_is_missing() {
     let app_address = spawn_app();
     let client = reqwest::Client::new();
 
